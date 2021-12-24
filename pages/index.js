@@ -27,6 +27,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <div className={styles.buttonContainer}>
+        <h3>Colors Generator</h3>
+      </div>
       <main className={styles.main}>
         {colors && colors.map(({ type, values }) => {
           const parser = colorParsers[type];
