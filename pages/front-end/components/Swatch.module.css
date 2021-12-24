@@ -1,0 +1,7 @@
+.swatch {
+    width: 100px;
+    height: 100px;
+    border: solid black;
+    border-width: 1px;
+    margin-right: 10px;
+}

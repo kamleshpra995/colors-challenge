@@ -1,0 +1,29 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 10vh;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  min-width: 12em;
+  height: 3em;
+  background-color: #760987;
+  border: none;
+  border-radius: 4%;
+  color: white;
+  font-size: 16px;
+}
