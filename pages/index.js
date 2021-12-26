@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Swatch from './front-end/components/Swatch';
-import colorParsers from './front-end/color-parsers';
+import Swatch from './components/Swatch';
+import colorParsers from '../common/color-parsers';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -31,9 +31,9 @@ export default function Home() {
         <h3>Colors Generator</h3>
       </div>
       <main className={styles.main}>
-        {colors && colors.map(({ type, values }) => {
+        {colors && colors.map(({ type, values }, index) => {
           const parser = colorParsers[type];
-          return <Swatch color={parser(values)} />
+          return <Swatch key={`color_${index}`} color={parser(values)} />
         })}
       </main>
       <div className={styles.buttonContainer}>

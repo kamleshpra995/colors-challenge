@@ -1,5 +1,5 @@
 
-import specs from '../back-end/color-spaces';
+import specs from '../../common/color-spaces';
 
 const buildResponse = (maxCount = 5) => {
     const colors = [];
